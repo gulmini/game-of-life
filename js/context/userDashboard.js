@@ -8,8 +8,8 @@ class UserDashboard {
             <div class="card-content">
                 <strong><p>${name}</p></strong>
                 <p class="card-date">created on ${timestamp}</p>
+                <canvas width="200" height="200" id="board-${board_id}"></canvas>
             </div>
-            <canvas width="150" height="150" id="board-${board_id}"></canvas>
             <div class="card-content">
               <button class="button secondary-button" onclick="gameCanvas.load('${repr}')">Load it!</button>
               <button class="button accent-button" onclick="handleDeleteBoard('${board_id}')">Delete</button>
