@@ -28,6 +28,7 @@ class UserDashboard {
 
     const canvas = new GameCanvas(`board-${board_id}`, {
       cellList: new Decompressor(repr).getCellList(),
+      gridSize: 32,
     });
   }
 
