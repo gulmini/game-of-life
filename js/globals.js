@@ -8,6 +8,8 @@ const gameCanvas = new PlayableGameCanvas(
   "gameCanvas",
   {
     cellList: [],
+    baseLineWidth: 32,
+    gridSize: 32,
   },
   {
     startStopButtonId: "startStopButton",

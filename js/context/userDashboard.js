@@ -4,16 +4,18 @@ class UserDashboard {
   static htmlCard(name, board_id, repr, timestamp) {
     return `
       <div id="card-board-${board_id}">
-        <hr class="divider" />
         <div class="card">
             <div class="card-content">
                 <strong><p>${name}</p></strong>
                 <p class="card-date">created on ${timestamp}</p>
-                <button class="button secondary-button" onclick="gameCanvas.load('${repr}')">Load it!</button>
-                <button class="button accent-button" onclick="handleDeleteBoard('${board_id}')">Delete</button>
             </div>
             <canvas width="150" height="150" id="board-${board_id}"></canvas>
+            <div class="card-content">
+              <button class="button secondary-button" onclick="gameCanvas.load('${repr}')">Load it!</button>
+              <button class="button accent-button" onclick="handleDeleteBoard('${board_id}')">Delete</button>
+            </div>
         </div>
+        <hr class="divider">
       </div>
     `;
   }

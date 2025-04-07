@@ -11,6 +11,7 @@ class GameCanvas {
     this.gridSize = options?.gridSize ?? 64;
     this.offsetX = 0;
     this.offsetY = 0;
+    this.baseLineWidth = options?.baseLineWidth ?? 32;
 
     this.drawGrid();
   }
@@ -19,7 +20,7 @@ class GameCanvas {
     const cellSize = this.canvas.width / this.gridSize;
 
     this.ctx.strokeStyle = "gray";
-    this.ctx.lineWidth = 32 / this.gridSize;
+    this.ctx.lineWidth = this.baseLineWidth / this.gridSize;
 
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     // Fill the grid with background color

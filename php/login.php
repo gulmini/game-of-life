@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // SQL query to fetch user data
     $query = $connection->prepare(
-        "SELECT user_id, username, password FROM users WHERE username = ?"
+        "SELECT user_id, email, username, password FROM users WHERE username = ?"
     );
     $query->bind_param("s", $username);
     $query->execute();

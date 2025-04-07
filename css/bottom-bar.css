@@ -1,7 +1,7 @@
 .bottom-bar {
     display: flex;
     justify-content: center;
-    gap: 8em;
+    gap: 1em;
 }
 
 .bottom-bar > div {
