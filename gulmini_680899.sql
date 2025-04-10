@@ -1,10 +1,10 @@
 -- Progettazione Web
-DROP DATABASE if exists gulmini_680899;
-CREATE DATABASE  gulmini_680899;
-USE  gulmini_680899;
+DROP DATABASE if exists pweb;
+CREATE DATABASE  pweb;
+USE  pweb;
 -- MySQL dump 10.13  Distrib 5.7.33, for Linux (x86_64)
 --
--- Host: localhost    Database: gulmini_680899
+-- Host: localhost    Database: pweb
 -- ------------------------------------------------------
 -- Server version	5.7.33-0ubuntu0.16.04.1
 

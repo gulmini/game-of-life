@@ -1,7 +1,23 @@
 class UserDashboard {
   constructor() {}
 
+  // note: this sanitize function may be insufficient to cover all code injection attacks,
+  // use a proper sanitizing function
+  static escapeHTML(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
   static htmlCard(name, board_id, repr, timestamp) {
+    const safeName = escapeHTML(name);
+    const safeBoardId = escapeHTML(board_id);
+    const safeRepr = escapeHTML(repr);
+    const safeTimestamp = escapeHTML(timestamp);
+
     return `
       <div id="card-board-${board_id}">
         <div class="card">

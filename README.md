@@ -1,5 +1,7 @@
 # Guide to Conway's Game of Life
 
+## *Disclaimer:* If you are a UniPi student (most likely you are), refer to `guide-for-pweb-exam.md`
+
 Conway's Game of Life is a cellular automaton devised by British mathematician John Horton Conway in 1970. It is a zero-player game, meaning its evolution is determined by its initial state, requiring no further input after the initial configuration. In this project, you can create an initial configuration, observe how it evolves, and explore the patterns in the game.
 
 ## Features
